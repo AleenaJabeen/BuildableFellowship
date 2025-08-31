@@ -1,0 +1,394 @@
+
+$bg-black: #000;
+$bg-gray: rgb(101, 93, 93);
+$text-white: #fff;
+$text-gray: rgb(176, 161, 161);
+$red: red;
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  background-color: $bg-gray;
+}
+
+
+.section1 {
+  height: 700px;
+  width: 100%;
+  background-image: url(./assets/n.jpg);
+
+  .header {
+    height: 5.8em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo img {
+      height: 90px;
+      width: 190px;
+      margin-left: 150px;
+      opacity: 1;
+    }
+
+    .button button {
+      width: 85px;
+      height: 35px;
+      background-color: $red;
+      border-radius: 5px;
+      border: none;
+      margin-right: 150px;
+      color: $text-white;
+      font-size: 1em;
+      font-weight: 600;
+    }
+  }
+
+  .main {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    top: 180px;
+    color: $text-white;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    .text1 h4 {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 40px;
+    }
+
+    .text2 h4 {
+      font-size: 22px;
+      font-weight: 500;
+      padding-top: 10px;
+      line-height: 50px;
+    }
+
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+      width: 820px;
+
+      .input {
+        margin-right: 15px;
+
+        input {
+          border-radius: 5px;
+          border: 1.5px solid green;
+          height: 57px;
+          width: 371px;
+          background-color: transparent;
+          color: rgb(81, 71, 60);
+          font-weight: 500;
+          font-size: 20px;
+          padding-left: 25px;
+        }
+      }
+
+      .button2 button {
+        background-color: $red;
+        border: none;
+        border-radius: 4px;
+        height: 57px;
+        width: 212px;
+        color: $text-white;
+        font-size: 26px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+.section2 {
+  background-color: $bg-black;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  top: 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .main-1 {
+    position: relative;
+    left: 45px;
+    height: 194px;
+    width: 475px;
+
+    .text-1 {
+      font-size: 36px;
+      color: $text-white;
+      font-weight: 700;
+      line-height: 3em;
+    }
+
+    .text-2 {
+      font-size: 26px;
+      color: $text-white;
+      font-weight: 400;
+    }
+  }
+
+  .main-2 {
+    height: 400px;
+    width: 600px;
+    background-image: url(./assets//tv.png);
+  }
+}
+
+
+.section3 {
+  background-color: $bg-black;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .main_1 {
+    height: 400px;
+    width: 600px;
+    background-image: url(./assets/mobile.jpg);
+  }
+
+  .main_2 {
+    height: 194px;
+    width: 475px;
+
+    .text_1 {
+      font-size: 36px;
+      color: $text-white;
+      font-weight: 700;
+      line-height: 2em;
+    }
+
+    .text_2 {
+      font-size: 26px;
+      color: $text-white;
+      font-weight: 400;
+    }
+  }
+}
+
+
+.section4 {
+  background-color: $bg-black;
+  height: 409px;
+  width: 100%;
+  position: relative;
+  top: 22px;
+
+  .main4_1 {
+    position: relative;
+    left: 120px;
+    top: 74px;
+    height: 265px;
+    width: 411px;
+
+    .text4_1 {
+      font-size: 36px;
+      color: $text-white;
+      font-weight: 700;
+      line-height: 1.5em;
+    }
+
+    .text4_2 {
+      padding-top: 20px;
+      font-size: 26px;
+      color: $text-white;
+      font-weight: 400;
+    }
+  }
+}
+
+
+.section5 {
+  background-color: $bg-black;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  top: 29px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .main5_1 {
+    height: 400px;
+    width: 600px;
+    background-image: url(./assets/cartoon.png);
+  }
+
+  .main5_2 {
+    height: 194px;
+    width: 475px;
+
+    .text5_1 {
+      font-size: 36px;
+      color: $text-white;
+      font-weight: 700;
+      line-height: 2em;
+    }
+
+    .text5_2 {
+      font-size: 26px;
+      color: $text-white;
+      font-weight: 400;
+    }
+  }
+}
+
+
+.section6 {
+  background-color: $bg-black;
+  height: 910px;
+  width: 100%;
+  position: relative;
+  top: 34px;
+
+  .heading h2 {
+    text-align: center;
+    font-size: 38px;
+    padding: 20px;
+    color: $text-white;
+  }
+
+  .faqbox {
+    background-color: rgb(48, 46, 46);
+    color: $text-white;
+    padding: 25px;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    font-size: 26px;
+    cursor: pointer;
+
+    svg {
+      filter: invert(1);
+    }
+
+    &:hover {
+      background-color: rgb(63, 57, 57);
+    }
+  }
+
+  .text21 h4 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 50px;
+    padding-bottom: 10px;
+    color: rgb(63, 57, 57);
+  }
+
+  .search2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15%;
+    height: 56px;
+    width: 830px;
+
+    .input input {
+      border-radius: 5px;
+      border: 1.5px solid green;
+      height: 57px;
+      width: 371px;
+      background-color: transparent;
+      color: rgb(81, 71, 60);
+      font-weight: 500;
+      font-size: 20px;
+      padding-left: 25px;
+    }
+
+    .button2 button {
+      background-color: $red;
+      border: none;
+      border-radius: 4px;
+      height: 57px;
+      width: 212px;
+      color: $text-white;
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+}
+
+
+footer {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  top: 42px;
+  background-color: $bg-black;
+
+  .a {
+    color: $text-gray;
+    padding: 70px;
+    position: relative;
+    top: 48px;
+    left: 12%;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60vw;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    left: 15%;
+    top: 20%;
+
+    .footer-item {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: $text-gray;
+        padding-top: 13px;
+      }
+    }
+  }
+
+  .inputa {
+    position: relative;
+    top: 33%;
+    padding-left: 17%;
+    width: 100%;
+
+    select {
+      width: 150px;
+      height: 38px;
+      color: $text-white;
+      background-color: $bg-black;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 2px solid $text-gray;
+    }
+
+    span {
+      color: $text-gray;
+    }
+  }
+}
