@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+  <div class="logo">Aleena</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+  </nav>
+</header>
+
+
+  <section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="about-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Web Developer Illustration">
+    </div>
+    <div class="about-text">
+      <p>
+        Hi! I'm a passionate <strong>Web Developer</strong> who loves building modern, 
+        responsive, and user-friendly websites and applications.  
+        I specialize in front-end development with frameworks like 
+        <strong>React</strong> and I enjoy turning complex problems 
+        into simple, elegant solutions.  
+      </p>
+      <p>
+        With experience across the full stack, I strive to create digital 
+        experiences that are both visually appealing and technically powerful.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <p>React</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <p>Node.js</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <p>Python</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>My Projects</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="image1.png"Project 1">
+        <h3>Project 1 - PDF Tool</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="image2.png" alt="Project 2">
+        <h3>Project 2 - WebControl CMS</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="image3.png" alt="Project 3">
+        <h3>Project 3 - SmartResume</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <div>
+        <input type="text" id="name" placeholder="Your Name">
+        <p class="error" id="nameError"></p>
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Your Email">
+        <p class="error" id="emailError"></p>
+      </div>
+      <div>
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        <p class="error" id="messageError"></p>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Aleena</h3>
+      <p>
+        Passionate Web Developer creating modern, responsive, 
+        and user-friendly digital experiences.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <div class="social-icons">
+        <a href="https://github.com/AleenaJabeen" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+  <script>
+  
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // Toggle icon between ☰ and ✖
+    menuToggle.textContent = navLinks.classList.contains('active') ? "✖" : "☰";
+  });
+
+
+    const form = document.getElementById('contactForm');
+    const nameField = document.getElementById('name');
+    const emailField = document.getElementById('email');
+    const messageField = document.getElementById('message');
+
+    const nameError = document.getElementById('nameError');
+    const emailError = document.getElementById('emailError');
+    const messageError = document.getElementById('messageError');
+
+    form.addEventListener('submit', function(e) {
+      let valid = true;
+
+      // Name validation
+      if (nameField.value.trim() === "") {
+        nameError.textContent = "Name is required.";
+        valid = false;
+      } else {
+        nameError.textContent = "";
+      }
+
+      // Email validation
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+      if (emailField.value.trim() === "") {
+        emailError.textContent = "Email is required.";
+        valid = false;
+      } else if (!emailField.value.match(emailPattern)) {
+        emailError.textContent = "Enter a valid email address.";
+        valid = false;
+      } else {
+        emailError.textContent = "";
+      }
+
+      // Message validation
+      if (messageField.value.trim() === "") {
+        messageError.textContent = "Message is required.";
+        valid = false;
+      } else {
+        messageError.textContent = "";
+      }
+
+      if (!valid) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
