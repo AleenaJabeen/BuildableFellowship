@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">TO DO LIST</div>
+    <div class="create-mode">Create Mode Activated</div>
+    
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Task description">
+      <select id="statusInput">
+        <option value="pending">Pending</option>
+        <option value="ongoing">Ongoing</option>
+        <option value="done">Done</option>
+      </select>
+      <button class="save-btn" onclick="addTask()">Save</button>
+      <button class="search-btn" onclick="renderTasks()">SearchON</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Task Description</th>
+          <th>Status</th>
+          <th>Created Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="taskTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</html>

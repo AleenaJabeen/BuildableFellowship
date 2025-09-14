@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #d9c7f2, #e8f0d9);
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 700px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.header {
+  background: white;
+  padding: 12px;
+  border-bottom: 2px solid purple;
+  text-align: left;
+  font-weight: bold;
+}
+.create-mode {
+  background: #d6f5c7;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: #333;
+}
+.task-input {
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  background: #f9f9f9;
+}
+.task-input input,
+.task-input select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+}
+.task-input button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.save-btn {
+  background: #28a745;
+  color: white;
+}
+.search-btn {
+  background: #444;
+  color: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background: linear-gradient(to right, #6a994e, #5e60ce);
+  color: white;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+tbody tr:nth-child(even) {
+  background: #f3e8ff;
+}
+tbody tr:nth-child(odd) {
+  background: #e0f7fa;
+}
+.actions button {
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 6px;
+}
+.edit {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.delete {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 7px;
+}
