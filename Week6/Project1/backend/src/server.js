@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const { errorHandler } = require('./middlewares/error.middleware.js');
+const {connectDb} = require('./models/database.js');
 
 // Load environment variables from .env file
 dotenv.config();
@@ -12,6 +13,7 @@ dotenv.config();
 
 
 const { PORT } = process.env;
+connectDb();
 
 
 const app = express();
