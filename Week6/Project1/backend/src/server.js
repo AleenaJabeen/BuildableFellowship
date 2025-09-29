@@ -30,6 +30,9 @@ app.use(cors());
 // Assign Routes
 
 app.use('/api/goals', require('./routes/router.js'));
+app.use('/api/users', require('./routes/user.routes.js'));
+
+
 app.use(errorHandler);
 
 
