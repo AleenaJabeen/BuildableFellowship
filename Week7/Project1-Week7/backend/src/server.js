@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const dotenv = require('dotenv').config();
 const connectDB = require('./models/database.js');
+const { errorHandler } = require('./middlewares/error.middleware.js');
 
 // Connect to Database
 connectDB();
@@ -33,7 +34,8 @@ app.use(cors());
 
 // Assign Routes
 
-app.use('/user', require('./routes/user.route.js'));
+app.use('/api/user', require('./routes/user.route.js'));
+app.use(errorHandler);
 
 // Open Server on selected Port
 app.listen(
